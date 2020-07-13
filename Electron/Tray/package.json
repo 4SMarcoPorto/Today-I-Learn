@@ -10,7 +10,7 @@
   "author": "sfatihk <sakkarmen@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "electron-tray-window": "^1.2.2",
+    "electron-tray-window": "^1.2.5",
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
