@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-
-</head>
-<style>
-  body {
+body {
     overflow-x: hidden;
     background: #FFFFFF;
     border-radius: 8px;
@@ -80,41 +72,13 @@
 
     outline: none;
   }
-
-  .no-qr-code {
-    margin-top: 10%;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 275;
-    font-size: 12px;
-    line-height: 10px;
-
-    color: #000000;
+  
+  textarea::placeholder {
+    color: #E5E5E5;
+    padding-left: 5px;
   }
 
   .qr-code{
     padding:5px;
   }
 
-  textarea::placeholder {
-    color: #E5E5E5;
-    padding-left: 5px;
-  }
-</style>
-
-<body>
-
-  <div class="header-tray">
-    <p>QR Code Generator</p>
-  </div>
-  <div class="container-center">
-    <textarea placeholder="Enter your content here" rows="2" cols="40" id="stringInput"></textarea>
-
-    <div class="no-qr-code" id="rp">No content to generate a QR Code</div>
-    <img src="./qr.png" class="qr-code">
-  </div>
-
-  <script> require('./render.js');</script>
-</body>
-
-</html>
