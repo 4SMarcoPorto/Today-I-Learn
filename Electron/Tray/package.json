@@ -1,5 +1,5 @@
 {
-  "name": "examples",
+  "name": "qrcodetray",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
-  "author": "sfatihk <sakkarmen@gmail.com>",
-  "license": "MIT",
+  "author": "4SMarcoPorto",
   "dependencies": {
     "electron-tray-window": "^1.2.5",
     "qrcode": "^1.4.4"
-  },
-  "devDependencies": {
-    "electron-reload": "^1.5.0"
   }
 }
