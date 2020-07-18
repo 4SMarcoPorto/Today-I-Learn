@@ -7,8 +7,6 @@ const { app,BrowserWindow } = require("electron");
 
 //render tray
 app.on("ready", () => {
-  
-
 
   TrayWindow.setOptions({
     trayIconPath: path.join("resources/assets/icon@3x.png"),
@@ -17,7 +15,6 @@ app.on("ready", () => {
     height:350
   });
 });
-
 
 //Generate qrcode from string provide by ipc
 async function QrCodeGenerator(string) {
@@ -31,7 +28,6 @@ async function QrCodeGenerator(string) {
       console.log("[QR-Code]:",200)
   })
 }
-
 
 //ipc listen runQrCodeGenerator then calls QrCodeGenerator function
 ipc.on('runQrCodeGenerator', (event, args) => {
