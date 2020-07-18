@@ -5,28 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "electron-pack": "build --em.main=build/electron.js"
+    "start": "electron ."
   },
   "author": "4SMarcoPorto",
   "dependencies": {
-    "electron-is-dev": "^1.2.0",
     "electron-tray-window": "^1.2.5",
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "electron-builder": "^22.7.0",
-    "wait-on": "^5.1.0"
-  },
-  "build": {
-    "appId": "com.qrcodegenerator.electron-cra",
-    "files": [
-      "build/**/*",
-      "node_modules/**/*"
-    ],
-    "directories":{
-      "buildResources": "dist"
-    }
+    "concurrently": "^5.2.0"
   }
 }
